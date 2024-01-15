@@ -9,28 +9,15 @@ import Novidades from '@/components/Novidades'
 import Produtos from '@/components/Produtos'
 import Rodape from '@/components/Rodape'
 
-const Home = ({
-  carrinho,
-  adicionarProduto,
-  removerProduto,
-  removerProdutoCarrinho,
-  valorTotalCarrinho,
-  quantidadeProdutos,
-}) => {
+const Home = () => {
   return (
     <>
-      <BarraNavegacao quantidadeProdutos={quantidadeProdutos} />
-      <CarrinhoSuspenso
-        carrinho={carrinho}
-        adicionarProduto={adicionarProduto}
-        removerProduto={removerProduto}
-        removerProdutoCarrinho={removerProdutoCarrinho}
-        valorTotalCarrinho={valorTotalCarrinho}
-      />
+      <BarraNavegacao />
+      <CarrinhoSuspenso />
       <main>
         <Carrossel />
         <Categorias />
-        <Produtos adicionarProduto={adicionarProduto} />
+        <Produtos />
         <Facilidades />
         <Novidades />
       </main>
