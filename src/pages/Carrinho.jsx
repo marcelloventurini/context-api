@@ -23,14 +23,9 @@ const Carrinho = () => {
               <Titulo className='text-center fw-bold mb-3 text-md-start'>
                 Detalhes da compra
               </Titulo>
-              <ListaProdutosCarrinho
-                carrinho={carrinho}
-              />
+              <ListaProdutosCarrinho carrinho={carrinho} />
             </div>
-            <Sumario
-              valorTotalCarrinho={valorTotalCarrinho}
-              quantidadeProdutos={quantidadeProdutos}
-            />
+            <Sumario />
           </div>
         </section>
       </main>
